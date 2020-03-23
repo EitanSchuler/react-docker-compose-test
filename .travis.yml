@@ -8,10 +8,10 @@ script:
   - docker run -e CI=true eitanschuler/react-docker-test npm run test
 deploy:
   provider: elasticbeanstalk
-  region: "eu-central-1"
+  region: "us-east-1"
   app: "docker-react"
   env: "DockerReact-env"
-  bucket_name: "elasticbeanstalk-eu-central-1-292567204964"
+  bucket_name: "elasticbeanstalk-us-east-1-292567204964"
   bucket_path: "docker-react"
   on:
     branch: master
